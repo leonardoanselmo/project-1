@@ -4,9 +4,10 @@ import { Component } from 'react';
 import { loadPosts } from '../../utils/load-posts';
 import { Posts } from '../../components/Posts';
 
-class Home extends Component {
+export class Home extends Component {
   state = {    
-    posts: []
+    posts: [],
+    allPosts: [],
   };
 
   async componentDidMount(){
@@ -29,4 +30,3 @@ class Home extends Component {
   }
 }
 
-export default Home;
